@@ -157,7 +157,7 @@ article p {
   position: absolute;
   text-transform: uppercase;
   font-size: 1.75rem;
-  top: 4rem;
+  bottom: 10%;
   color: var(--primary-white);
   left: 1rem;
   max-width: 145px;
@@ -238,6 +238,27 @@ footer p {
   h1 {
     align-self: flex-start;
   }
+
+  .content {
+    width: 100%;
+    max-width: 80%;
+    margin: 3rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .creations div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .creations div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -271,5 +292,8 @@ footer p {
     max-width: 650px;
     font-size: 4.5rem;
     line-height: 4.5rem;
+  }
+  .creations div {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
