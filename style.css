@@ -39,6 +39,21 @@ header li {
   font-size: 1.25rem;
 }
 
+header li:hover {
+  cursor: pointer;
+  position: relative;
+}
+
+header li:hover:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  height: 15px;
+  width: 50%;
+  border-bottom: 2px solid var(--primary-white);
+}
+
 header.show-menu {
   background: var(--primary-black);
   height: 100vh;
@@ -161,6 +176,18 @@ article {
   position: relative;
 }
 
+article:hover {
+  cursor: pointer;
+}
+
+article:hover img {
+  opacity: 0.3;
+}
+
+article:hover p {
+  color: var(--primary-black);
+}
+
 article p {
   position: absolute;
   text-transform: uppercase;
@@ -266,6 +293,10 @@ footer p {
     margin: 3rem auto;
   }
 
+  .about {
+    margin: 7rem auto;
+  }
+
   .creations {
     flex-direction: row;
     flex-wrap: wrap;
@@ -317,7 +348,7 @@ footer p {
 
   .creations {
     gap: 3.5rem;
-    row-gap: 2rem;
+    row-gap: 2.5rem;
   }
 
   article p {
@@ -389,6 +420,10 @@ footer p {
   .about p {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .creations {
+    row-gap: 4.5rem;
   }
 
   .creations div {
