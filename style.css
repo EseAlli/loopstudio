@@ -105,7 +105,7 @@ section {
 section img {
   display: block;
   object-fit: contain;
-  width: -webkit-fill-available;
+  max-width: 100%;
 }
 
 h2 {
@@ -147,12 +147,14 @@ h2 {
 .creations h2 {
   margin: 0.75rem 0;
   letter-spacing: 0.125rem;
+  order: 1;
 }
 
 .creations div {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  order: 2;
 }
 
 article {
@@ -181,6 +183,14 @@ article p {
   font-family: "Alata", sans-serif;
   letter-spacing: 0.2rem;
   font-weight: 400;
+  order: 3;
+  max-width: 150px;
+}
+
+.creations button:hover {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  cursor: pointer;
 }
 
 footer {
@@ -255,13 +265,37 @@ footer p {
     max-width: 80%;
     margin: 3rem auto;
   }
+
+  .creations {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .creations h2 {
+    flex: 1 1 160px;
+    text-align: start;
+  }
+
+  .creations div {
+    order: 3;
+    flex: 1 1 160px;
+  }
+
+  .creations button {
+    order: 2;
+    flex: 1 1 160px;
+  }
+
+  section img {
+    max-width: none;
+    width: -webkit-fill-available;
+  }
 }
 
 @media (min-width: 768px) {
   .creations div {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -280,9 +314,10 @@ footer p {
     max-width: 50%;
     text-align: start;
   }
-  .creations div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+  .creations {
+    gap: 3.5rem;
+    row-gap: 2rem;
   }
 
   .footer-content {
@@ -307,6 +342,9 @@ footer p {
 }
 
 @media (min-width: 1280px) {
+  .content {
+    max-width: 90%;
+  }
   .menu-control {
     display: none;
   }
