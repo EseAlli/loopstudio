@@ -320,6 +320,11 @@ footer p {
     row-gap: 2rem;
   }
 
+  article p {
+    left: 2rem;
+    bottom: 5%;
+  }
+
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
