@@ -19,8 +19,13 @@ header {
   padding: 2.5rem 1rem;
   background-size: cover;
   color: var(--primary-white);
-  gap: 11.45rem;
   height: 100vh;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 11.45rem;
 }
 
 header ul {
@@ -36,6 +41,7 @@ header li {
 
 header.show-menu {
   background: var(--primary-black);
+  height: 100vh;
 }
 
 header.show-menu h1 {
@@ -88,6 +94,7 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   align-self: center;
   line-height: 2.75rem;
+  max-width: 400px;
 }
 
 section {
@@ -212,5 +219,57 @@ footer p {
 @media (min-width: 375px) {
   h1 {
     padding: 1.75rem 1.125rem;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    background-image: url(./images/desktop/image-hero.jpg);
+    height: 100%;
+  }
+
+  header > div {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto 4rem auto;
+    gap: 6rem;
+  }
+
+  h1 {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu-control {
+    display: none;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  header > div {
+    margin: 1.5rem auto 7rem auto;
+    gap: 8rem;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  header li {
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  h1 {
+    max-width: 650px;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
   }
 }
