@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
 header {
   background-image: url(./images/mobile/image-hero.jpg);
   display: flex;
@@ -39,15 +44,17 @@ header li {
   font-size: 1.25rem;
 }
 
-header li:hover {
+header li:hover,
+footer li:hover {
   cursor: pointer;
   position: relative;
 }
 
-header li:hover:before {
+header li:hover:before,
+footer li:hover:before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 20%;
   bottom: 0;
   height: 15px;
   width: 50%;
@@ -247,6 +254,10 @@ footer {
 footer p {
   color: var(--secondary-gray);
   font-family: "Alata", sans-serif;
+}
+
+footer li {
+  padding-bottom: 0.5rem;
 }
 
 .footer-menu {
