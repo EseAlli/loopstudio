@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/loopstudios-landing-page-t4iGqBbWMT](https://www.frontendmentor.io/solutions/loopstudios-landing-page-t4iGqBbWMT)
+- Live Site URL: [https://esealli.github.io/loopstudio/](https://esealli.github.io/loopstudio/)
 
 ## My process
 
@@ -46,5 +46,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Eseoghene Alli](https://esealli.github.io/)
+- Frontend Mentor - [@EseAlli](https://www.frontendmentor.io/profile/EseAlli)
