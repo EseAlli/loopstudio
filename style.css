@@ -142,7 +142,11 @@ h2 {
   gap: 2rem;
 }
 
-.about div {
+.about-content {
+  position: relative;
+}
+
+.about-content div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -300,7 +304,6 @@ footer li {
 
   .content {
     width: 100%;
-    max-width: 80%;
     margin: 3rem auto;
   }
 
@@ -339,6 +342,10 @@ footer li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .content {
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -347,18 +354,18 @@ footer li {
     position: relative;
   }
 
-  .about div {
+  .about-content div {
     position: absolute;
     background-color: white;
-    right: 0rem;
-    padding: 4rem 0rem 2rem 4rem;
-    bottom: 0;
-    max-width: 50%;
+    right: -9.5rem;
+    padding: 3rem 0rem 2rem 2rem;
+    bottom: -1px;
+    max-width: 60%;
     text-align: start;
   }
 
   .creations {
-    gap: 3.5rem;
+    gap: 50%;
     row-gap: 2.5rem;
   }
 
@@ -389,9 +396,6 @@ footer li {
 }
 
 @media (min-width: 1280px) {
-  .content {
-    max-width: 90%;
-  }
   .menu-control {
     display: none;
   }
@@ -433,8 +437,14 @@ footer li {
     line-height: 1.5rem;
   }
 
+  .about-content div {
+    padding: 4rem 0rem 2rem 4rem;
+    max-width: 70%;
+    right: -22rem;
+  }
   .creations {
     row-gap: 4.5rem;
+    column-gap: 65%;
   }
 
   .creations div {
