@@ -349,6 +349,10 @@ footer li {
 }
 
 @media (min-width: 992px) {
+  header li,
+  .footer-menu li {
+    font-size: 1.25rem;
+  }
   .about {
     flex-direction: row;
     position: relative;
@@ -365,13 +369,17 @@ footer li {
   }
 
   .creations {
-    gap: 50%;
+    column-gap: 50%;
     row-gap: 2.5rem;
   }
 
   article p {
     left: 2rem;
     bottom: 5%;
+  }
+
+  footer {
+    padding: 1rem;
   }
 
   .footer-content {
